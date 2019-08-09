@@ -1,0 +1,14 @@
+$primary: #26263e;
+$auxColor: #F3F5FA;
+$bgColor: #fafafa;
+@mixin mobile {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}

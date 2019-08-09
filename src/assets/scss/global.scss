@@ -1,0 +1,16 @@
+/* Global CSS - available in all components */
+
+body {
+    background: #fafafa;
+    padding-top: 50px;
+}
+
+
+/* Bootstrap Reset */
+
+.btn,
+.form-control,
+.modal-content,
+.label {
+    border-radius: 0;
+}
