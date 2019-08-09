@@ -17,7 +17,7 @@
             
         </div>
 
-        <div class="giveBackContainer text-center" v-if="book.loan != false && user != false && book.loan.userId == user.id">
+        <div class="giveBackContainer" v-if="book.loan != false && user != false && book.loan.userId == user.id">
             <button class="btn btn-primary" @click.prevent="getBackBook(book)">
                 <span class="glyphicon glyphicon-remove"></span>
                 Devolver
@@ -101,7 +101,10 @@
 }
 
 .giveBackContainer {
+    left: 0;
     margin-bottom: 12px;
+    position: absolute;
+    top: 0;
 }
 
 .bookImage {
